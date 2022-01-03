@@ -1719,7 +1719,14 @@ class Application(Toplevel,Sender):
 		# ZY: switch to YZ view
 		elif cmd in ("YZ","ZY"):
 			self.canvasFrame.viewYZ()
+			
+                #EYALADDED 
+                elif cmd in ("ZTF"):
+                        self.canvas.fit2Screen()
 
+                elif cmd in ("ZOOMOUT"):
+				self.canvad.menuZoomOut()
+			
 		else:
 			rc = self.executeCommand(oline)
 			if rc:
