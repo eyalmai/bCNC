@@ -1720,12 +1720,12 @@ class Application(Toplevel,Sender):
 		elif cmd in ("YZ","ZY"):
 			self.canvasFrame.viewYZ()
 			
-                #EYALADDED 
-                elif cmd in ("ZTF"):
-                        self.canvas.fit2Screen()
+        #EYALADDED 
+		elif cmd in ("ZTF"):
+			self.canvas.fit2Screen()
 
-                elif cmd in ("ZOOMOUT"):
-				self.canvad.menuZoomOut()
+		elif cmd in ("ZOOMOUT"):
+			self.canvad.menuZoomOut()
 			
 		else:
 			rc = self.executeCommand(oline)
